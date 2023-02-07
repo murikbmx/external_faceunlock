@@ -1,5 +1,5 @@
 cc_library {
-    name: "faceunlock_dependencies",
+    name: "faceunlock_vendor_dependencies",
     srcs: [
         "faceunlock_dependencies_dummy.cpp",
     ],
@@ -12,8 +12,12 @@ cc_library {
     compile_multilib: "64",
     required: [
         "libFaceDetectCA",
-        "libmegface",
+        "libmegface_faceunlock",
         "libMegviiUnlock",
         "libMegviiUnlock-jni-1.2",
+        "libarcsoft_faceid",
+        "libarcsoft-lib",
+        "libarcsoftbase",
+        "libmpbase",
     ],
 }
